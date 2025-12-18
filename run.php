@@ -45,19 +45,6 @@ while (true)
 	if (!is_dir($dirName))
 		mkdir($dirName, 0777, true);
 
-	if (file_exists($outputFile))
-	{
-		echo "\nFile already exists. Do you wish to overwrite it? [y/N]";
-		$input = strtolower(trim(readline()));
-
-		switch (strtolower(trim($input)))
-		{
-		case 'y': case 'yes':
-			break;
-		case 'n': case 'no': default:
-			continue 2;
-		}
-	}
 
 	// Get language
 
