@@ -1,3 +1,5 @@
 <speak>
+	<break time="1s"/>
 	Thank you.
+	<break time="1s"/>
 </speak>
